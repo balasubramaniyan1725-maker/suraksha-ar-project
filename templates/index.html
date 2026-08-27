@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
+<title>SURAKSHA-AR &mdash; Industrial Safety Training</title>
+<meta name="theme-color" content="#0f3d24" />
+<link rel="manifest" href="/manifest.json" />
+<link rel="icon" href="/static/icon-192.png" />
+<link rel="apple-touch-icon" href="/static/icon-192.png" />
+<link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <div id="offline-banner" class="offline-banner hidden">You are offline &mdash; cached modules still work. Progress will sync when you're back online.</div>
+
+  <div id="app"></div>
+
+  <nav id="bottom-nav" class="bottom-nav hidden">
+    <button data-route="#/modules" class="nav-btn" data-icon="home">
+      <span class="nav-ic">🏠</span><span class="nav-lbl" data-i18n="nav.home">Home</span>
+    </button>
+    <button data-route="#/certificates" class="nav-btn" data-icon="cert">
+      <span class="nav-ic">📜</span><span class="nav-lbl" data-i18n="nav.certs">Certificates</span>
+    </button>
+    <button data-route="#/dashboard" class="nav-btn" data-icon="dash">
+      <span class="nav-ic">📊</span><span class="nav-lbl" data-i18n="nav.dashboard">Progress</span>
+    </button>
+    <button data-route="#/settings" class="nav-btn" data-icon="settings">
+      <span class="nav-ic">⚙️</span><span class="nav-lbl" data-i18n="nav.settings">Settings</span>
+    </button>
+  </nav>
+
+  <script src="/static/js/i18n.js"></script>
+  <script src="/static/js/api.js"></script>
+  <script src="/static/js/offline.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="/static/js/ar-engine.js"></script>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
